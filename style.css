@@ -464,11 +464,19 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .navbar { flex-direction: column; gap: 1rem; padding: 1rem; }
+    .navbar { flex-direction: column; gap: 1rem; padding: 1rem; align-items: stretch; }
+    .logo { justify-content: center; }
+    .nav-controls { flex-direction: column; width: 100%; gap: 1rem; }
+    .search-box { width: 100%; }
     .search-box input { width: 100%; }
     .search-box input:focus { width: 100%; }
+    .hero { padding: 3rem 1rem; }
     .hero h2 { font-size: 2rem; }
+    .hero p { font-size: 1.1rem; }
     .stats { flex-direction: column; gap: 1rem; }
-    .question-header { flex-wrap: wrap; }
+    .container { padding: 0 1rem; }
+    .content-area { padding: 1.5rem 1rem; }
+    .question-header { flex-wrap: wrap; gap: 0.5rem; padding: 1rem; }
     .q-badge { order: -1; }
+    .answer-content { padding: 1.5rem 1rem; font-size: 1.05rem; }
 }

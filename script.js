@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
     const searchResultsHeader = document.getElementById('searchResultsHeader');
     const themeToggle = document.getElementById('themeToggle');
-    const printBtn = document.getElementById('printBtn');
 
     // 4. Render Unit Cards
     function renderUnitCards() {
@@ -176,13 +175,6 @@ document.addEventListener('DOMContentLoaded', () => {
             root.setAttribute('data-theme', 'dark');
             icon.className = 'fa-solid fa-sun';
         }
-    });
-
-    // Print
-    printBtn.addEventListener('click', () => {
-        // Open all accordions before printing
-        document.querySelectorAll('.question-item').forEach(qi => qi.classList.add('open'));
-        window.print();
     });
 
     // Initialize
