@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>தமிழர் மரபும் தொழில்நுட்பமும் - தேர்வு வழிகாட்டி</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-book-open-reader"></i>
+            <h1>தமிழர் மரபும் தொழில்நுட்பமும்</h1>
+        </div>
+        <div class="nav-controls">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="வினாக்களைத் தேடுக...">
+            </div>
+            <button id="themeToggle" class="icon-btn" title="Dark Mode Toggle"><i class="fa-solid fa-moon"></i></button>
+            <button id="printBtn" class="icon-btn" title="பிரிண்ட் செய்க"><i class="fa-solid fa-print"></i></button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">JGE2202</span>
+            <h2>பல்கலைக்கழக தேர்வு வழிகாட்டி</h2>
+            <p>முக்கிய வினாக்கள் மற்றும் விரிவான பதில்கள் (வினா வங்கி 2025-26)</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <i class="fa-solid fa-layer-group"></i> 5 அலகுகள்
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-circle-check"></i> 2 & 16 மதிப்பெண்கள்
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <!-- Unit Navigation Cards -->
+        <section class="unit-grid" id="unitGrid">
+            <!-- Dynamically generated unit cards will go here -->
+        </section>
+
+        <!-- Search Results Header (Hidden by default) -->
+        <h3 id="searchResultsHeader" class="section-title hidden">தேடல் முடிவுகள்</h3>
+
+        <!-- Content Area -->
+        <section class="content-area" id="contentArea">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">அனைத்தும்</button>
+                <button class="filter-btn" data-filter="2mark">2 மதிப்பெண்கள்</button>
+                <button class="filter-btn" data-filter="16mark">16 மதிப்பெண்கள்</button>
+            </div>
+            
+            <div id="questionsContainer" class="questions-container">
+                <div class="placeholder-msg">தயவுசெய்து ஒரு அலகினை தேர்ந்தெடுக்கவும் அல்லது தேடவும்.</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 தமிழர் மரபும் தொழில்நுட்பமும் இணையதளம். All rights reserved.</p>
+    </footer>
+
+    <!-- Data Scripts -->
+    <script src="data.js"></script>
+    <script src="unit2.js"></script>
+    <script src="unit3.js"></script>
+    <script src="unit4.js"></script>
+    <script src="unit5.js"></script>
+    
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
